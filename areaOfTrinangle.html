@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Enter side of triangle</h1>
+    side1:<input type="text" id="side1">
+    side2:<input type="text" id="side2">
+    side3:<input type="text" id="side3"><br>
+    Area is: <p id="ans"></p>
+    <br>
+    <button onclick="findTriangle()">click me</button>
+    <script>
+        
+        function findTriangle(){
+            var side1=document.getElementById("side1").value;
+            var side2=document.getElementById("side2").value;
+            var side3=document.getElementById("side3").value;
+
+
+            side1=Number(side1);
+            side2=Number(side2);
+            side3=Number(side3);
+            var s = (side1 + side2 + side3)/2;
+            var area =  Math.sqrt(s*((s-side1)*(s-side2)*(s-side3)));
+           // console.log(Number(area)); 
+            document.getElementById("ans").innerHTML=area;
+        }
+    </script>
+</body>
+</html>
