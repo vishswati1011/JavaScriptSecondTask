@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var d= new Date();
+        var arr=["Sunday","Monday","Tuesday","Wednesday","Thusday","Friday","Saterday"];
+        document.write("Today is : "+arr[d.getDay()]);
+        if(d.getHours()>12)
+        document.write("<br>Current Time:"+d.getHours()+" PM: "+d.getMinutes()+" : "+d.getSeconds());
+        else
+        document.write("<br>Current Time:"+d.getHours()+" AM: "+d.getMinutes()+" : "+d.getSeconds());
+      
+      //  document.write(d.toLocaleTimeString());
+      //  document.write(d.toLocaleDateString());
+    </script>
+</body>
+</html>
