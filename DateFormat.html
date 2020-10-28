@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var d=new Date();
+
+        var month=d.getUTCMonth();
+        var date =d.getUTCDate();
+        var year=d.getFullYear();
+
+        document.write("mm-dd-yyyy : "+month+" -"+date+" - "+year+"<br>");
+        document.write("mm/dd/yyyy : "+month+" / "+date+" / "+year+"<br>");
+        document.write("dd-mm-yyyy : "+date+" - "+month+" - "+year+"<br>");
+        document.write("dd/mm/yyyy : "+date+" / "+month+" / "+year+"<br>");
+    </script>
+</body>
+</html>
